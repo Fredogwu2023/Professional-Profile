@@ -31,7 +31,12 @@
             <a id="resumeLink" href="Fred Product Owner.pdf" target="_blank">View Resume</a>
         </button>
     </div>
-                <!-- <button class= "hireBtn"> Hire Me </button>-->           
+       <script>
+        document.getElementById("resumeSelect").addEventListener("change", function() {
+            var selectedFile = this.value;
+            document.getElementById("resumeLink").href = selectedFile;
+        });
+        <!-- <button class= "hireBtn"> Hire Me </button>-->           
             </nav>
              
                
