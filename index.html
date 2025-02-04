@@ -18,8 +18,7 @@
         
 
         </div> 
-
-            <div class="container">
+<div class="container">
         <h2>Select a Resume</h2>
         <select id="resumeSelect">
             <option value="Fred Product Owner.pdf">Fred Product Owner</option>
@@ -27,15 +26,17 @@
             <option value="Frederick Ogwu Business Development.pdf">Frederick Ogwu Business Development</option>
         </select>
         <br>
-        <button class="resume-btn">
-            <a id="resumeLink" href="Fred Product Owner.pdf" target="_blank">View Resume</a>
-        </button>
+        <a id="resumeLink" href="Fred Product Owner.pdf" target="_blank">
+            <button class="resume-btn">View Resume</button>
+        </a>
     </div>
-       <script>
+
+    <script>
         document.getElementById("resumeSelect").addEventListener("change", function() {
             var selectedFile = this.value;
             document.getElementById("resumeLink").href = selectedFile;
         });
+    </script>
         <!-- <button class= "hireBtn"> Hire Me </button>-->           
             </nav>
              
