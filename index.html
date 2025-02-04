@@ -2,31 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fronts.googleapis.com/css?family=Halant:wgt@300;400;500;600;700&family=manrope:@200;300;400;500;600;700;800&display=" rel="stylesheet">
+    <title>Resume Selector</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .resume-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .resume-btn a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+        }
+    </style>
 </head>
-<body> 
-    
-    <nav class="navsection">
+<body>
 
-    
-        <div>
-        <p> CURRICULUM VITAE</p>
-        
-
-        </div> 
-<div class="container">
+    <div class="container">
         <h2>Select a Resume</h2>
         <select id="resumeSelect">
-            <option value="Fred Product Owner.pdf">Fred Product Owner</option>
-            <option value="Fred Product Manager.pdf">Fred Product Manager</option>
-            <option value="Frederick Ogwu Business Development.pdf">Frederick Ogwu Business Development</option>
+            <option value="Fred%20Product%20Owner.pdf">Fred Product Owner</option>
+            <option value="Fred%20Product%20Manager.pdf">Fred Product Manager</option>
+            <option value="Frederick%20Ogwu%20Business%20Development.pdf">Frederick Ogwu Business Development</option>
         </select>
-         <br>
-        <a id="resumeLink" href="Frederick Ogwu Business Development.pdf" target="_blank">
+        <br>
+        <a id="resumeLink" href="Fred%20Product%20Owner.pdf" target="_blank">
             <button class="resume-btn">View Resume</button>
         </a>
     </div>
@@ -37,6 +49,8 @@
             document.getElementById("resumeLink").href = selectedFile;
         });
     </script>
+
+       
         <!-- <button class= "hireBtn"> Hire Me </button>-->           
             </nav>
              
